@@ -1119,6 +1119,10 @@ nav ul li a {
         padding: 0 5rem
     }
 
+    .hero {
+        padding-top: 10rem;
+        padding-bottom: 0rem;
+    }
     .services .list div {
 
         text-align: center;
@@ -1288,8 +1292,8 @@ nav ul li a {
     }
 
     .hero {
-        padding-top: 15rem;
-        padding-bottom: 8rem;
+        padding-top: 10rem;
+        padding-bottom: 0rem;
     }
     .hero h2{
         margin-top: 2rem;
