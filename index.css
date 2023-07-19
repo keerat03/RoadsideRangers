@@ -1252,6 +1252,9 @@ nav ul li a {
     .hero .wrapper h2 {
         margin-right: 0;
     }
+    .hero .review span {
+        font-size: 1.4rem;
+    }
 
     .badges .four {
         display: none;
