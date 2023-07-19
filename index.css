@@ -1122,6 +1122,9 @@ nav ul li a {
 
 
 @media screen and (max-width: 480px) {
+    .badge p{
+        font-size: 1.3rem;
+    }
     .hero h1{
         font-size: 5rem;
     }
