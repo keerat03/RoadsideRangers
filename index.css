@@ -1252,8 +1252,12 @@ nav ul li a {
     .hero .wrapper h2 {
         margin-right: 0;
     }
-    .hero .review span {
+    .hero-review span {
         font-size: 1.1rem;
+    }
+    .hero-review img {
+        height: 1.3;
+        margin-left: 0.2rem;
     }
 
     .badges .four {
@@ -1291,10 +1295,10 @@ nav ul li a {
         margin-top: 2rem;
         font-size: 2rem;
     }
-    .hero .review span {
+    .hero-review span {
         font-size: 1.1rem;
     }
-    .hero .review img {
+    .hero-review img {
         height: 1.3;
         margin-left: 0.2rem;
     }
