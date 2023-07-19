@@ -29,7 +29,9 @@ html {
 .phone-menu {
     display: none;
 }
-
+.logo {
+    height: 3rem;
+}
 h1 {
     font-size: 6rem;
 }
@@ -897,6 +899,11 @@ nav ul li a {
         /* Display under the main content */
         z-index: 1;
     }
+
+    .services .wrapper {
+        padding: 0 3rem;
+    }
+    
 }
 
 @media screen and (max-width: 650px) {
@@ -1030,6 +1037,10 @@ nav ul li a {
         margin-left: -40rem;
     
         padding: 15rem 0;
+    }
+
+    .services .wrapper {
+        padding: 0REM 5rem;
     }
     .scroll-element {
 
