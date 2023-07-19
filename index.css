@@ -452,6 +452,10 @@ nav ul li a {
     color: white;
 }
 
+.footer .menu ul  {
+    display: none;
+}
+
 .footer .icons {
 
     display: flex;
@@ -466,7 +470,13 @@ nav ul li a {
 
 .footer .icons img {
     height: 2rem;
-    margin-left: 6rem;
+    /* margin-left: 6rem; */
+}
+.footer .icons .one{
+    margin-right: 5rem;
+}
+.footer .icons .three{
+    margin-left: 5rem;
 }
 
 
@@ -1214,7 +1224,9 @@ nav ul li a {
 }
 
 @media screen and (max-width: 440px) {
-    
+    .badge p{
+        font-size: 1.3rem;
+    }
     h1{
         font-size: 3rem;
     }
@@ -1284,6 +1296,13 @@ nav ul li a {
         font-size: 2rem;
     }
 
+    .final .wrapper{
+        padding: 0 3rem;
+    }
+    .footer .wrapper {
+        padding: 0 0rem;
+    }
+
 }
 
 @media screen and (max-width: 400px){
@@ -1291,6 +1310,9 @@ nav ul li a {
         padding: 0 5rem;
     }
 
+    .footer .wrapper {
+        padding: 0 2rem;
+    }
     .hero {
         padding-top: 10rem;
         padding-bottom: 0rem;
@@ -1319,6 +1341,10 @@ nav ul li a {
     }
     .badges .badge p {
         font-size: 1.4rem;
+    }
+
+    .final {
+        font-size: 1.6rem;
     }
 
 
