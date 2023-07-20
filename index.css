@@ -29,7 +29,7 @@ html {
 .phone-menu {
     display: none;
 }
-.logo {
+nav .logo {
     height: 3rem;
 }
 h1 {
