@@ -5,7 +5,10 @@
     <meta name="viewport" content="widt h=device-width, initial-scale=1">
     <title>Roadside Rangers</title>
     <link rel="stylesheet" href="index.css">
-    <!-- Google tag (gtag.js) -->
+    <script type="text/javascript" src="index.js" defer></script>
+
+
+    <!-- Mobile Menu Interaction -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11267391506">
     </script>
     <script>
@@ -16,6 +19,8 @@
       gtag('config', 'AW-11267391506');
     </script>
 </head>
+
+
 <body>
 
     <header id = "home-area">
@@ -25,8 +30,28 @@
 
                 <!-- <span class="logo">Roadside Rangers</span> -->
                 <img src="logo.png" alt="" class = "logo">
-                <img src="hamburger.png" alt="" class ="iphone-menu">
-                <ul class = "nav-bar">
+                <img src="hamburger.png" alt="" class ="iphone-menu" id = "mobile-menu">
+
+                <ul class="active-mobile-menu" id="active-mobile-menu">
+                    <img src="close.png" alt="" class="mobile-exit" id = "mobile-exit">
+                    <li class="nav-item-mobile">
+                        <a href="#home-area" class = "mobile-nav-item">Home</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#services-area" class = "mobile-nav-item">Services</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#about-area" class = "mobile-nav-item">About Us</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#testimonials-area" class = "mobile-nav-item">Testimonials</a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a href="#fleet-area" class = "mobile-nav-item">Fleet</a>
+                    </li>
+                </ul>
+
+                <ul class = "nav-bar"  id = "nav-bar">
 
                     <li class="nav-item">
                         <a href="#home-area">Home</a>
@@ -82,7 +107,7 @@
                         <a href="tel:519-784-8000" class="one">Get A Free Estimate</a>
                     </span>
                     <span>
-                        <a href="" class="two">Learn More</a>
+                        <a href="#badges" class="two">Learn More</a>
 
                     </span>
                 </div>
@@ -94,7 +119,7 @@
     
     <body>
 
-        <section class="badges">
+        <section class="badges" id = "badges">
 
             <div class="wrapper">
                 <div class="badge one">
@@ -140,6 +165,9 @@
                         <p>Offering on-the-spot help for minor repairs and
                             issues such as flat tire changes, battery jump-starts,
                             fuel delivery,and lockout assistance.</p>
+                        <h3>
+                            <a href="tel:519-784-8000" class="cta_service">Free Estimate</a>
+                        </h3>
                     </div>
                     <div class="two">
                         <img src="hauling-services.png" alt="">
@@ -147,6 +175,9 @@
                         <p>Providing immediate assistance in towing
                             vehicles that have broken down, experienced
                             mechanical failures, or are involved in accidents.</p>
+                            <h3>
+                                <a href="tel:519-784-8000" class="cta_service">Free Estimate</a>
+                            </h3>
                     </div>
                     <div class="three">
                         <img src="accident-service.png" alt="">
@@ -154,6 +185,9 @@
                         <p>Assisting in the recovery and removal of vehicle
                             involved in accidents,ensuring safe and
                              efficient transportation to designated locations.</p>
+                             <h3>
+                                <a href="tel:519-784-8000" class="cta_service">Free Estimate</a>
+                            </h3>
                     </div>
 
                 </div>
@@ -192,7 +226,7 @@
 
                 <div class="scroll-element">
 
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-one" >
                         
                         <div class="scroll-element-text">
                             
@@ -210,9 +244,9 @@
                     </div>
 
                 </div>
-                <div class="scroll-element">
+                <div class="scroll-element" >
 
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-two" ">
                         
                         <div class="scroll-element-text">
                             
@@ -230,7 +264,7 @@
 
                 </div>
                 <div class="scroll-element">
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-three">
                         
                         <div class="scroll-element-text">
                            
@@ -248,7 +282,7 @@
                     </div>
                 </div>
                 <div class="scroll-element">
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-four">
                         
                         <div class="scroll-element-text">
                             
@@ -269,7 +303,7 @@
                 </div>
                 <div class="scroll-element">
 
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-five">
                         
                         <div class="scroll-element-text">
                             
@@ -288,7 +322,7 @@
                 </div>
                 <div class="scroll-element">
 
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-six">
                         
                         <div class="scroll-element-text">
                             
@@ -307,7 +341,7 @@
                 </div>
                 <div class="scroll-element">
 
-                    <div class="scroll-element-back">
+                    <div class="scroll-element-back-seven" >
                         
                         <div class="scroll-element-text">
                             <p>I had a tire blowout on a busy highway, and I called Roadside 
@@ -371,43 +405,53 @@
         </section>
 
         <div class="final">
-            <span>Experience Peace Of Mind.</span>
-            <a href="tel:519-784-8000">Call Now!</a>
+            <div class="wrapper">
+                <span>Experience Peace Of Mind.</span>
+                <a href="tel:519-784-8000">Call Now!</a>
+
+            </div>
         </div>
 
         <section class="footer">
+            <div class="wrapper">
+                <div class="icons">
+                    <img src="facebook.png" alt="" class="one">
+                    <img src="instagram.png" alt="">
+                    <img src="gmail.png" alt="" class = "three">
+                </div>
 
-            <div class="icons">
-                <img src="facebook.png" alt="" class="one">
-                <img src="instagram.png" alt="">
-                <img src="gmail.png" alt="" class = "three">
+                <div class="menu">
+                    
+                        <ul>
+
+                            <li class="nav-item-one">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="nav-item-two">
+                                <a href="">Services</a>
+                            </li>
+                            <li class="nav-item-three">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="nav-item-four">
+                                <a href="">Testimonials</a>
+                            </li>
+                            <li class="nav-item-five">
+                                <a href="">Fleet</a>
+                            </li>
+
+                        </ul>
+                    
+
+                    <p>"© 2023 Roadside Rangers. All rights reserved. </p>
+        
+                </div>
             </div>
-
-            <div class="menu">
-
-                <ul>
-
-                    <li class="nav-item-one">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="nav-item-two">
-                        <a href="">Services</a>
-                    </li>
-                    <li class="nav-item-three">
-                        <a href="">About Us</a>
-                    </li>
-                    <li class="nav-item-four">
-                        <a href="">Testimonials</a>
-                    </li>
-                    <li class="nav-item-five">
-                        <a href="">Fleet</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <p>"© 2023 Roadside Rangers. All rights reserved. </p>
         </section>
+
+
+        
+
     </body>
     
 
