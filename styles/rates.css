@@ -1,0 +1,60 @@
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 4em; 
+}
+
+/* Accident Towing */
+.accident-rates-content{
+
+    display:flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4em;
+    text-align: left;
+
+
+}   
+.accident-rates-content >*{
+    min-width: 250px
+
+}
+
+.accident-rates-heading{
+    margin: 2em 0;
+}
+.accident-rates-buttons{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+.accident-rates-buttons >* {
+    flex: 1;
+    padding: auto 0;
+}
+
+/* Regular Towing */
+.regular-rates-heading{
+    margin: 2em 0;
+}
+.regular-rates-content{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 2em;
+}
+.heavy-duty-towing-rates{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.light-duty-towing-rates{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
