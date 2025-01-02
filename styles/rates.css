@@ -2,23 +2,29 @@ main{
     display: flex;
     flex-direction: column;
     gap: 4em; 
-    padding-bottom:4em; 
 }
 
+.accident-rates{
+    margin-bottom: 8em;
+}
 /* Accident Towing */
 .accident-rates-content{
 
     display:flex; 
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 2em;
     text-align: left;
+    padding-bottom: 5em;
 
 
 }   
 .accident-rates-content >*{
     min-width: 250px
 
+}
+h3{
+    margin: 1.5em 0;
 }
 
 .accident-rates-heading{
@@ -36,6 +42,27 @@ main{
     padding: auto 0;
 }
 
+.accident-tow-rates table{
+    width: 100%;
+}
+.accident-storage-rates-yards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+
+}
+.accident-storage-rates-yards >*{
+    min-width: 250px;
+}
+
+
+.accident-storage-rates-yard-1{
+    flex: 1;
+}
+.accident-storage-rates-yard-2{
+    flex: 1;
+}
 /* Regular Towing */
 .regular-rates-heading{
     margin: 2em 0;
@@ -58,4 +85,13 @@ main{
     flex-direction: column;
     gap: 2em;
 
+}
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+table *{
+    padding: 0.5em;
+}
+table, table *{
+    box-sizing: border-box;
 }

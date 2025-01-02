@@ -1,0 +1,204 @@
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* Company Overiew */
+
+.company-overview{
+    margin: 8em 0;
+}
+.company-overview .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+.company-overview .wrapper >*{
+    flex:1;
+    min-width: 250px
+}
+
+
+.company-overview-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    /* justify-content: center; */
+    text-align: left;
+}
+
+.company-overview-image img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+}
+
+
+/* Company Mission */
+.company-mission{
+    padding: 5em 0;
+    background-color: rgb(64, 64, 64);
+}
+
+.company-mission-heading{
+    color: white;
+    margin-bottom: 1em;
+}
+
+.company-mission-text{
+    color: white;
+}
+
+/* Values */
+
+.our-values{
+    margin: 8em 0;
+}
+
+.our-values-heading{
+    margin-bottom: 2em;
+}
+.our-values-content{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+}
+.our-values-content >*{
+    flex: 1;
+    min-width: 225px;
+}
+
+.our-values-content{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+.our-values-content-value {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.our-values-content-value-image {
+    height: 10em;
+}
+.our-values-content-value-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+/* Our History */
+
+.our-history .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+.our-history .wrapper >*{
+    flex: 1;
+    min-width: 250px;
+}
+
+.our-history-content{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.our-history-image img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+
+
+
+
+
+
+
+/* Services */
+
+.services{
+    margin-top: 5em;
+}
+.services-subtitle{
+    margin: 1em 0;
+}
+.services-list{
+    display:flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 5em 0;
+}
+
+.service-item{
+    padding: 10em 5em;
+    color: white;
+    min-width: 300px;
+}
+
+.service-item:nth-child(1){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),url(/images/main/services-background-one.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    width: 100%;
+    min-width: 100%;
+}
+.service-item:nth-child(2){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),url(/images/main/services-background-two.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+
+}
+.service-item:nth-child(3){
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),url(/images/main/services-background-three.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+
+}
+
+.service-item:nth-child(1):hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(/images/main/services-background-one.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-item:nth-child(2):hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(/images/main/services-background-two.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-item:nth-child(3):hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),url(/images/main/services-background-three.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services-buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    gap: 1em;
+}
+.services-buttons >*{
+    flex: 1;
+}
+
