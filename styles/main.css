@@ -161,6 +161,10 @@
 .process-buttons > *{
     flex: 1;
 }
+.process-buttons a{
+    width: 100%;
+    padding: 1em 0;
+}
 
 
 /* Why-Choose-Us*/
@@ -331,4 +335,31 @@
     .hero{
         padding: 10em 0;
     }
+}
+@media (max-width: 950px){
+    .hero{
+        padding: 10em 0;
+    }
+
+    .process{
+        margin: 5em 0;
+    }
+
+    .locations{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+    .locations h2{
+        margin-top: 0;
+
+    }
+
+    .why-choose-us{
+        margin-bottom: 0;
+    }
+
+    .about-us{
+        margin-top: 5em;
+    }
+
 }
