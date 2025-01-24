@@ -15,7 +15,7 @@
     --p: 18px/30px var(--ff)
 }
 
-.mobile-active-cta{
+.mobile-active-cta {
     display: none;
 }
 
@@ -193,8 +193,8 @@ a {
 }
 
 /* Hero Section */
-.hero{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),  url(/images/main/test-main-image.jpg);
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/images/main/test-main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,14 +202,15 @@ a {
     color: white;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     margin: 0.3em 0;
 }
 
-.hero-buttons{
+.hero-buttons {
     margin-top: 2em;
 }
-.hero-buttons a{
+
+.hero-buttons a {
     margin: 0 0.2em;
 }
 
@@ -232,35 +233,39 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2em ;
+    gap: 2em;
     align-items: center;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
 }
-.footer-nav{
-    flex:1; 
+
+.footer-nav {
+    flex: 1;
     min-width: 200px;
 }
-.footer-social{
-    flex:1; 
+
+.footer-social {
+    flex: 1;
     min-width: 200px;
     display: flex;
     flex-direction: column;
 
 }
-.footer-contact{
-    flex:1; 
+
+.footer-contact {
+    flex: 1;
     min-width: 200px;
 
 
 }
-.footer a{
-    color:white;
+
+.footer a {
+    color: white;
 }
 
 
@@ -283,9 +288,10 @@ a {
 }
 
 @media (max-width: 1000px) {
-    .nav{
+    .nav {
         position: fixed;
     }
+
     .top-bar {
         display: none;
     }
@@ -321,7 +327,7 @@ a {
         display: none;
         flex-direction: column;
         gap: 2em;
-        text-align: right;        
+        text-align: right;
 
 
     }
@@ -330,7 +336,8 @@ a {
         text-decoration: none;
         color: black;
     }
-    .nav-mobile-exit img{
+
+    .nav-mobile-exit img {
         width: 2em;
         height: 2em;
     }
@@ -339,37 +346,42 @@ a {
 }
 
 /* Updated Footer */
-@media (max-width: 950px){
+@media (max-width: 950px) {
 
 
-    .mobile-active-cta{
-        position: fixed ;
+    .mobile-active-cta {
+        box-sizing: border-box;
+        position: fixed;
         display: flex;
-        width: 100%;
         height: 10vh;
-        bottom: 0;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
         z-index: 1000;
-        background-color: var(--primary-color) ;
-        /* border-radius: 1em; */
+        background-color: var(--primary-color);
+        border-radius: 0.5em;
     }
-    .hero{
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url(/images/main/test-main-image.jpg);
+
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/main/test-main-image.jpg);
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
         /* background-position: -80em; */
         padding: 10em 0 8em;
         color: white;
-        
+
     }
 
-    .hero-title{
+    .hero-title {
         font-size: 42px;
         line-height: 1.5em;
     }
-    .hero-subtitle{
+
+    .hero-subtitle {
         font-size: 28px;
     }
-    .mobile-active-cta a{
+
+    .mobile-active-cta a {
         display: flex;
         width: 100%;
         height: 100%;
@@ -379,20 +391,24 @@ a {
         font-weight: bold;
         color: white;
     }
-    .hero-content{
+
+    .hero-content {
         text-align: center;
     }
-    .footer{
+
+    .footer {
         align-items: center;
         text-align: center;
     }
 
-    .footer p{
+    .footer p {
         padding-bottom: 1em;
     }
-    .footer .wrapper{
+
+    .footer .wrapper {
         gap: 0;
     }
+
     /* .footer-social{
         display: flex;
         flex-direction: row;
@@ -401,15 +417,17 @@ a {
     .footer-social >*{
         flex: 1;
     } */
-    .footer-links{
+    .footer-links {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 
     }
-    .footer-links >*{
+
+    .footer-links>* {
         flex: 1;
     }
+
     /* .footer-contact{
         display: flex;
         flex-direction: row;
@@ -420,6 +438,6 @@ a {
         flex: 1;
     } */
 
-    
+
 
 }

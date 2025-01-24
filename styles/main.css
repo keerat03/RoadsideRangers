@@ -21,6 +21,7 @@
 mark{
     background-color: var(--primary-color);
     color: white;
+
 }
 /* nav bar  */
 
@@ -37,12 +38,14 @@ mark{
     margin: 0.3em 0;
 }
 
+
 .hero-buttons{
     margin-top: 2em;
 }
 .hero-buttons a{
     margin: 0 0.2em;
 }
+
 
 .services{
     margin-top: 5em;
@@ -322,12 +325,14 @@ mark{
 
 .contact{
     margin: 7em 0;
+    text-align: left;
 }
 .contact-description{
     margin: 2em 0;
 }
 .contact a{
     display: block;
+    text-align: center;
 }
 
 @media (max-width: 1750px) {
@@ -407,7 +412,7 @@ margin-top: 8em;
 
     /* Size */
     height: 100%;
-
+    width: 90%;
     z-index: 3;
     border-radius: 3rem;
     background: #ffffff;
@@ -446,15 +451,7 @@ margin-top: 8em;
     /* background: #5f98ec; */
     content: '';
     border-radius: 3rem;
-
-
     position: absolute;
-
-    /* Size */
-    /* height: 150%; */
-    /* width: 110%; */
-
-    /* Display under the main content */
     z-index: 1;
 }
 
