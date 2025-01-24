@@ -18,7 +18,10 @@
 
 }
 
-
+mark{
+    background-color: var(--primary-color);
+    color: white;
+}
 /* nav bar  */
 
 .hero{
