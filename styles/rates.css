@@ -7,22 +7,21 @@ main{
 .accident-rates{
     margin-bottom: 8em;
 }
+
 /* Accident Towing */
 .accident-rates-content{
-
     display:flex; 
     flex-direction: column;
     flex-wrap: wrap;
     gap: 2em;
     text-align: left;
     padding-bottom: 5em;
-
-
 }   
-.accident-rates-content >*{
-    min-width: 250px
 
+.accident-rates-content >*{
+    min-width: 250px;
 }
+
 h3{
     margin: 1.5em 0;
 }
@@ -30,6 +29,7 @@ h3{
 .accident-rates-heading{
     margin: 2em 0;
 }
+
 .accident-rates-buttons{
     margin-top: 2em;
     display: flex;
@@ -37,6 +37,7 @@ h3{
     gap: 0.5em;
     flex-wrap: wrap;
 }
+
 .accident-rates-buttons >* {
     flex: 1;
     padding: auto 0;
@@ -45,53 +46,87 @@ h3{
 .accident-tow-rates table{
     width: 100%;
 }
+
 .accident-storage-rates-yards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
-
 }
+
 .accident-storage-rates-yards >*{
-    min-width: 250px;
+    min-width: 300px;
 }
-
 
 .accident-storage-rates-yard-1{
     flex: 1;
 }
+
 .accident-storage-rates-yard-2{
     flex: 1;
 }
+.accident-storage-rates-yard-3{
+    flex: 1;
+}
+.accident-storage-rates-yard-4{
+    flex: 1;
+}
+
 /* Regular Towing */
 .regular-rates-heading{
     margin: 2em 0;
 }
+
 .regular-rates-content{
     display: flex;
     flex-direction: row;
     text-align: left;
     gap: 2em;
 }
+
 .heavy-duty-towing-rates{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
+
 .light-duty-towing-rates{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2em;
-
 }
+
 tbody tr:nth-child(even){
     background-color: lightgray;
 }
+
 table *{
     padding: 0.5em;
 }
+
 table, table *{
     box-sizing: border-box;
+}
+
+
+/* ---------- Mobile fixes (keeps your style) ---------- */
+@media (max-width: 768px){
+
+    /* Make the storage certificate image fit the screen */
+    .accident-storage-rates img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Prevent tables from going off-screen: allow horizontal scroll on mobile */
+    table{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
