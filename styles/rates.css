@@ -55,22 +55,13 @@ h3{
 }
 
 .accident-storage-rates-yards >*{
-    min-width: 300px;
+    min-width: 200px; /* FIXED: was missing px */
 }
 
-.accident-storage-rates-yard-1{
-    flex: 1;
-}
-
-.accident-storage-rates-yard-2{
-    flex: 1;
-}
-.accident-storage-rates-yard-3{
-    flex: 1;
-}
-.accident-storage-rates-yard-4{
-    flex: 1;
-}
+.accident-storage-rates-yard-1{ flex: 1; }
+.accident-storage-rates-yard-2{ flex: 1; }
+.accident-storage-rates-yard-3{ flex: 1; }
+.accident-storage-rates-yard-4{ flex: 1; }
 
 /* Regular Towing */
 .regular-rates-heading{
@@ -120,6 +111,16 @@ table, table *{
         height: auto;
         display: block;
     }
+    .accident-storage-rates img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .accident-rates img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
     /* Prevent tables from going off-screen: allow horizontal scroll on mobile */
     table{
@@ -128,5 +129,45 @@ table, table *{
         display: block;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ---------- Small phones: make tables fit WITHOUT crowding ---------- */
+@media (max-width: 360px){
+
+    /* Keep padding comfortable (not cramped) */
+    table *{
+        padding: 0.45em;
+    }
+
+    /* Keep font readable */
+    table{
+        font-size: 0.95rem;
+    }
+
+    /* KEY: hide the middle column so the table actually fits */
+    table th:nth-child(2),
+    table td:nth-child(2){
+        display: none;
+    }
+
+    /* Let the Service column wrap naturally */
+    table th:nth-child(1),
+    table td:nth-child(1){
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    /* Amount stays tight and readable */
+    table th:nth-child(3),
+    table td:nth-child(3){
+        white-space: nowrap;
+    }
+
+    .accident-storage-rates img{
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
